@@ -95,7 +95,7 @@ end
 def winner(board)
   if win_array = won?(board)
     winner = board[win_array[0]]
-    return winner
+    return "#{winner}"
   end
 end
 

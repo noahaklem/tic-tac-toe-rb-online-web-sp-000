@@ -48,9 +48,9 @@ def turn(board)
   #receive user input
   input = gets.strip
   #convert user input to index
-  index = input_to_index(input)
+  user_converted = input_to_index(input)
   #if valid_move, make move and show board
-  if !valid_move?(board, index)
+  if !valid_move?(board, user_converted)
     turn(board)
   #otherwise ask recall turn() until valid move is received
   end

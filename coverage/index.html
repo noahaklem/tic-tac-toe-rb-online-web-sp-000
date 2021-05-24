@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-24T03:27:29+00:00">2021-05-24T03:27:29+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-24T03:28:39+00:00">2021-05-24T03:28:39+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -636,8 +636,8 @@
           <code class="ruby">  #true if board is won, draw or full</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="92">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="7" data-linenumber="92">
+          <span class="hits">7</span>
           
           <code class="ruby">  won?(board) || draw?(board) || full?(board)</code>
         </li>
@@ -711,13 +711,13 @@
         <li class="covered" data-hits="9" data-linenumber="104">
           <span class="hits">9</span>
           
-          <code class="ruby">    if won?(board)</code>
+          <code class="ruby">    if won?(board) == true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="105">
           <span class="hits">1</span>
           
-          <code class="ruby">      puts &quot;Congratulations #{winner(board)}!&quot;</code>
+          <code class="ruby">      return &quot;Congratulations #{winner(board)}!&quot;</code>
         </li>
       
         <li class="covered" data-hits="8" data-linenumber="106">
@@ -729,7 +729,7 @@
         <li class="missed" data-hits="0" data-linenumber="107">
           
           
-          <code class="ruby">      puts &quot;Woah that was a close one! Cats game!&quot;</code>
+          <code class="ruby">      return &quot;Woah that was a close one! Cats game!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="108">

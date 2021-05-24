@@ -101,13 +101,7 @@ end
 def play(board)
   until over?(board) == true
     turn(board)
-    if won?(board) == true
-      return "Congratulations #{winner(board)}!"
-      exit
-    elsif draw?(board)
-      return "Woah that was a close one! Cats game!"
-    
-    end
+   
   end
 end
 

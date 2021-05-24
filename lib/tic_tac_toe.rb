@@ -102,7 +102,7 @@ def play(board)
   until over?(board)
     turn(board)
      if won?(board)
-      return "Congratulations #{winner(board)}!"
+      return "Congratulations #{board[win_array[0]]}!"
       
     elsif draw?(board)
       return "Woah that was a close one! Cats game!"

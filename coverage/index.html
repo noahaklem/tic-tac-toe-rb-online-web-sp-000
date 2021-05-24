@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-24T02:44:31+00:00">2021-05-24T02:44:31+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-05-24T02:46:50+00:00">2021-05-24T02:46:50+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">62.22%</span></span>
+    (<span class="covered_percent"><span class="red">65.96%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.4
+         1.7
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>1</b> files in total.
-    <b>45</b> relevant lines. 
-    <span class="green"><b>28</b> lines covered</span> and
-    <span class="red"><b>17</b> lines missed </span>
+    <b>47</b> relevant lines. 
+    <span class="green"><b>31</b> lines covered</span> and
+    <span class="red"><b>16</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#e36321bbf77989ad35cfcbdf7727f4b6afdbd106" class="src_link" title="lib/tic_tac_toe.rb">lib/tic_tac_toe.rb</a></td>
-        <td class="red strong">62.22 %</td>
+        <td class="red strong">65.96 %</td>
         <td>105</td>
-        <td>45</td>
-        <td>28</td>
-        <td>17</td>
-        <td>1.4</td>
+        <td>47</td>
+        <td>31</td>
+        <td>16</td>
+        <td>1.7</td>
       </tr>
       
     </tbody>
@@ -79,11 +79,11 @@
         <div class="source_table" id="e36321bbf77989ad35cfcbdf7727f4b6afdbd106">
   <div class="header">
     <h3>lib/tic_tac_toe.rb</h3>
-    <h4><span class="red">62.22 %</span> covered</h4>
+    <h4><span class="red">65.96 %</span> covered</h4>
     <div>
-      <b>45</b> relevant lines. 
-      <span class="green"><b>28</b> lines covered</span> and
-      <span class="red"><b>17</b> lines missed.</span>
+      <b>47</b> relevant lines. 
+      <span class="green"><b>31</b> lines covered</span> and
+      <span class="red"><b>16</b> lines missed.</span>
     </div>
   </div>
   
@@ -210,8 +210,8 @@
           <code class="ruby">def input_to_index(user_input)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="21">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="21">
+          <span class="hits">4</span>
           
           <code class="ruby">  user_input.to_i-1</code>
         </li>
@@ -234,8 +234,8 @@
           <code class="ruby">def move(board, index, token)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="25">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="25">
+          <span class="hits">4</span>
           
           <code class="ruby">  board[index] = token</code>
         </li>
@@ -258,8 +258,8 @@
           <code class="ruby">def position_taken?(board, index)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="29">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="29">
+          <span class="hits">7</span>
           
           <code class="ruby">  board[index] != &quot; &quot; &amp;&amp; board[index] !=&quot;&quot; </code>
         </li>
@@ -282,8 +282,8 @@
           <code class="ruby">def valid_move?(board,index)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="33">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="33">
+          <span class="hits">4</span>
           
           <code class="ruby">  index.between?(0,8) &amp;&amp; !position_taken?(board,index)</code>
         </li>
@@ -306,8 +306,8 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="37">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="30" data-linenumber="37">
+          <span class="hits">30</span>
           
           <code class="ruby">  board.count{|token| token == &quot;X&quot; || token == &quot;O&quot;}</code>
         </li>
@@ -336,8 +336,8 @@
           <code class="ruby">  #use turn_count to determine x or o turn_count</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="42">
+          <span class="hits">2</span>
           
           <code class="ruby">  turn_count(board) % 2 == 0 ? &quot;X&quot; : &quot;O&quot;</code>
         </li>
@@ -378,10 +378,10 @@
           <code class="ruby">  #receive user input</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  </code>
+          <code class="ruby">  input = gets.strip</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
@@ -390,10 +390,10 @@
           <code class="ruby">  #convert user input to index</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  </code>
+          <code class="ruby">  index = input_to_index(input)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
@@ -405,7 +405,7 @@
         <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">  if !valid_move?(board, input)</code>
+          <code class="ruby">  if !valid_move?(board, index)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="54">
@@ -432,8 +432,8 @@
           <code class="ruby">  #token different? x or o how to tell</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
-          
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
           
           <code class="ruby">  move(board, input, current_player(board))</code>
         </li>

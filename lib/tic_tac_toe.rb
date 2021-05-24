@@ -104,9 +104,9 @@ def play(board)
      if won?(board) 
        if board[0] =="X"
         puts "Congratulations X!"
-        if board[0] == "O"
+        elsif board[0] == "O"
           puts "Congratulations O!"
-      
+      end
     elsif draw?(board)
       return "Woah that was a close one! Cats game!"
     

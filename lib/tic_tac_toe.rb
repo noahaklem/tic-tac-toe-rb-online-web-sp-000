@@ -99,8 +99,13 @@ def winner(board)
 end
 
 def play(board)
-  until over?(board)
-  input = gets.strip
+  until over?(board) == true
+    input = gets.strip
+  end
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  elsif draw?(board)
+    puts "Woah that was a close one! Cats game!"
 end
 
 

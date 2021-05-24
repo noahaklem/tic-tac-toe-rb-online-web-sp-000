@@ -48,7 +48,7 @@ def turn(board)
   #receive user input
   input = gets.strip
   #convert user input to index
-  index = input_to_index(input)
+  
   #if valid_move, make move and show board
   if !valid_move?(board, input)
     turn(board)

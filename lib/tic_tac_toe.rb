@@ -89,7 +89,7 @@ end
 
 def over?(board)
   #true if board is won, draw or full
-  !won?(board) || draw?(board) || full(board)
+  won?(board) || draw?(board) || full(board)
 end
 
 def winner(board)

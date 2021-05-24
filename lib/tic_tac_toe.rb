@@ -102,6 +102,7 @@ def play(board)
   until over?(board) == true
     input = gets.strip
     turn(board)
+    display_board(board)
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"

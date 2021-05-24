@@ -65,10 +65,12 @@ def won?(board)
     position_2 = board[win_combos[1]]
     position_3 = board[win_combos[2]]
     
-    if !position_1 == " " && !position_2 == " " && !position_3 == " "
-      return win_combos
-    end
-    false
+    if (position_1 == "X" && position_2 == "X" && position_3 == "X")
+		  return win_combos
+		elsif (position_1 == "O" && position_2 == "O" && position_3 == "O")
+		  return win_combos
+		end
+		false
   end
   false
 end

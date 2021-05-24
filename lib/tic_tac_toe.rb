@@ -46,11 +46,11 @@ def turn(board)
   #ask for user move
   puts "Please enter 1-9"
   #receive user input
-  
+  input = gets.strip
   #convert user input to index
-  
+  index = input_to_index(input)
   #if valid_move, make move and show board
-  if !valid_move?(board, input)
+  if !valid_move?(board, index)
     turn(board)
   #otherwise ask recall turn() until valid move is received
   end

@@ -55,7 +55,7 @@ def turn(board)
   #otherwise ask recall turn() until valid move is received
   end
   #token different? x or o how to tell
-  move(board, input, current_player(board))
+  move(board, user_converted, current_player(board))
   display_board(board)
 end
 
